@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 if(task.isSuccessful()) {
                     FirebaseUser user = task.getResult().getUser();
                     updateUI(user);
+
                 }
             }
         });
