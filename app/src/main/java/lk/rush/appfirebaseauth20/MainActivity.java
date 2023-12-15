@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCodeSent(@NonNull String verificationId, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                 Log.i(TAG,"onCodeSent: "+verificationId);
-                Toast.makeText(MainActivity.this, "OTP sent to your phone.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "OTP sent to your phone Please ckeck", Toast.LENGTH_SHORT).show();
 
                 mverificationId = verificationId;
                 resendingToken = forceResendingToken;
